@@ -3,184 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Modernized EasyZoom Demo</title>
     <link rel="stylesheet" href="./dist/modernized-easyzoom-min.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+      }
+      .demo-section {
+        margin-bottom: 40px;
+      }
+    </style>
   </head>
   <body>
-    <!-- ZOOM -->
-    <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails">
-      <a
-        href="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_ce5c49e422176b9c77bfebb0ecb3d366130f189e_producto_large_90.jpg"
-      >
-        <img
-          src="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_ce5c49e422176b9c77bfebb0ecb3d366130f189e_producto_medium_80.jpg"
-          alt="Silla Telma"
-          itemprop="image"
-          width="624"
-          height="624"
-        />
-      </a>
+    <h1>Modernized EasyZoom Demo</h1>
+
+    <div class="demo-section">
+      <h2>Basic Example</h2>
+      <div class="easyzoom easyzoom--overlay">
+        <a
+          href="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+            alt="Nature"
+          />
+        </a>
+      </div>
     </div>
 
-    <!-- THUMBNAILS -->
-    <div class="thumbnails">
-      <a
-        href="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_ce5c49e422176b9c77bfebb0ecb3d366130f189e_producto_large_90.jpg"
-        data-standard="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_ce5c49e422176b9c77bfebb0ecb3d366130f189e_producto_medium_80.jpg"
-        class="thumbnail"
-      >
-        <img
-          src="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_ce5c49e422176b9c77bfebb0ecb3d366130f189e_producto_micro_80.jpg"
-          alt="Silla Telma"
-          itemprop="image"
-          width="64"
-          height="64"
-        />
-      </a>
-      <a
-        href="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_6b4f058451f232194567a23e991c80f814275dcf_producto_large_90.jpg"
-        data-standard="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_6b4f058451f232194567a23e991c80f814275dcf_producto_medium_80.jpg"
-        class="thumbnail"
-      >
-        <img
-          src="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_6b4f058451f232194567a23e991c80f814275dcf_producto_micro_80.jpg"
-          alt="Silla Telma"
-          itemprop="image"
-          width="64"
-          height="64"
-        />
-      </a>
-      <a
-        href="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_b084ae0bc8464cae4d258a6e19ef8b5c0ff09caa_producto_large_90.jpg"
-        data-standard="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_b084ae0bc8464cae4d258a6e19ef8b5c0ff09caa_producto_medium_80.jpg"
-        class="thumbnail"
-      >
-        <img
-          src="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_b084ae0bc8464cae4d258a6e19ef8b5c0ff09caa_producto_micro_80.jpg"
-          alt="Silla Telma"
-          itemprop="image"
-          width="64"
-          height="64"
-        />
-      </a>
-      <a
-        href="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_6d47f737b8f0efbce591ba2c755d630de7fe3cc3_producto_large_90.png"
-        data-standard="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_6d47f737b8f0efbce591ba2c755d630de7fe3cc3_producto_medium_80.png"
-        class="thumbnail"
-      >
-        <img
-          src="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_6d47f737b8f0efbce591ba2c755d630de7fe3cc3_producto_micro_80.png"
-          alt="Silla Telma"
-          itemprop="image"
-          width="64"
-          height="64"
-        />
-      </a>
-      <a
-        href="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_493246f5a1f22614f867fa8f86fff31922b4e8e8_producto_large_90.jpg"
-        data-standard="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_493246f5a1f22614f867fa8f86fff31922b4e8e8_producto_medium_80.jpg"
-        class="thumbnail"
-      >
-        <img
-          src="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_493246f5a1f22614f867fa8f86fff31922b4e8e8_producto_micro_80.jpg"
-          alt="Silla Telma"
-          itemprop="image"
-          width="64"
-          height="64"
-        />
-      </a>
-      <a
-        href="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_f2b83b268a8992bb5f28c2a1d121daf58bf871a3_producto_large_90.jpg"
-        data-standard="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_f2b83b268a8992bb5f28c2a1d121daf58bf871a3_producto_medium_80.jpg"
-        class="thumbnail"
-      >
-        <img
-          src="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_f2b83b268a8992bb5f28c2a1d121daf58bf871a3_producto_micro_80.jpg"
-          alt="Silla Telma"
-          itemprop="image"
-          width="64"
-          height="64"
-        />
-      </a>
-      <a
-        href="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_484c3c074d9fedf9ec561aa31d038d219e59d913_producto_large_90.png"
-        data-standard="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_484c3c074d9fedf9ec561aa31d038d219e59d913_producto_medium_80.png"
-        class="thumbnail"
-      >
-        <img
-          src="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_484c3c074d9fedf9ec561aa31d038d219e59d913_producto_micro_80.png"
-          alt="Silla Telma"
-          itemprop="image"
-          width="64"
-          height="64"
-        />
-      </a>
-      <a
-        href="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_493246f5a1f22614f867fa8f86fff31922b4e8e8_producto_large_90.jpg"
-        data-standard="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_493246f5a1f22614f867fa8f86fff31922b4e8e8_producto_medium_80.jpg"
-        class="thumbnail"
-      >
-        <img
-          src="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_493246f5a1f22614f867fa8f86fff31922b4e8e8_producto_micro_80.jpg"
-          alt="Silla Telma"
-          itemprop="image"
-          width="64"
-          height="64"
-        />
-      </a>
-      <a
-        href="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_f2b83b268a8992bb5f28c2a1d121daf58bf871a3_producto_large_90.jpg"
-        data-standard="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_f2b83b268a8992bb5f28c2a1d121daf58bf871a3_producto_medium_80.jpg"
-        class="thumbnail"
-      >
-        <img
-          src="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_f2b83b268a8992bb5f28c2a1d121daf58bf871a3_producto_micro_80.jpg"
-          alt="Silla Telma"
-          itemprop="image"
-          width="64"
-          height="64"
-        />
-      </a>
-      <a
-        href="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_484c3c074d9fedf9ec561aa31d038d219e59d913_producto_large_90.png"
-        data-standard="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_484c3c074d9fedf9ec561aa31d038d219e59d913_producto_medium_80.png"
-        class="thumbnail"
-      >
-        <img
-          src="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_484c3c074d9fedf9ec561aa31d038d219e59d913_producto_micro_80.png"
-          alt="Silla Telma"
-          itemprop="image"
-          width="64"
-          height="64"
-        />
-      </a>
+    <div class="demo-section">
+      <h2>With Thumbnails</h2>
+      <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails">
+        <a
+          href="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1799&q=80"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+            alt="Product"
+          />
+        </a>
+      </div>
+      <div class="thumbnails">
+        <a
+          class="thumbnail"
+          href="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1799&q=80"
+          data-standard="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
+            alt="Product Thumbnail"
+          />
+        </a>
+        <a
+          class="thumbnail"
+          href="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80"
+          data-standard="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
+            alt="Product Angle Thumbnail"
+          />
+        </a>
+        <a
+          class="thumbnail"
+          href="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+          data-standard="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
+            alt="Product Detail Thumbnail"
+          />
+        </a>
+      </div>
     </div>
+
+    <script type="module">
+      import EasyZoom from "./dist/modernized-easyzoom-min.js";
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Initialize basic example
+        new EasyZoom(document.querySelector(".easyzoom"));
+
+        // Initialize example with thumbnails
+        const easyZoomWithThumbnails = new EasyZoom(
+          document.querySelector(".easyzoom--with-thumbnails")
+        );
+
+        const thumbnails = document.querySelector(".thumbnails");
+        if (thumbnails) {
+          thumbnails.addEventListener("click", (e) => {
+            e.preventDefault();
+            const target = e.target.closest("a");
+            if (target) {
+              easyZoomWithThumbnails.swap(
+                target.getAttribute("data-standard"),
+                target.getAttribute("href")
+              );
+            }
+          });
+        }
+      });
+    </script>
   </body>
-  <script type="module">
-    import EasyZoom from "./dist/modernized-easyzoom-min.js";
-
-    document.addEventListener("DOMContentLoaded", () => {
-      // Initialize basic example
-      new EasyZoom(document.querySelector(".easyzoom"));
-
-      // Initialize example with thumbnails
-      const easyZoomWithThumbnails = new EasyZoom(
-        document.querySelector(".easyzoom--with-thumbnails")
-      );
-
-      const thumbnails = document.querySelector(".thumbnails");
-      if (thumbnails) {
-        thumbnails.addEventListener("click", (e) => {
-          e.preventDefault();
-          const target = e.target.closest("a");
-          if (target) {
-            easyZoomWithThumbnails.swap(
-              target.getAttribute("data-standard"),
-              target.getAttribute("href")
-            );
-          }
-        });
-      }
-    });
-  </script>
 </html>
