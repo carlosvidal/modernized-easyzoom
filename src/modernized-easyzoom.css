@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 .easyzoom {
     display: inline-block;
     position: relative;
@@ -82,7 +92,7 @@
 
 .thumbnails {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 64px);
+    grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
     gap: 0.5rem;
     margin: 0 auto;
     height: fit-content;
@@ -108,11 +118,14 @@
 
 .thumbnails .thumbnail img {
     object-fit: cover;
+    width: 100%;
     min-width: 100% !important;
     min-height: 100% !important;
+    max-width: none;
+    max-height: none;
     display: block;
     transition: opacity .2s ease;
-    height: auto;
+    flex: 1;
 }
 
 .thumbnails .thumbnail:hover img {

@@ -99,16 +99,29 @@ export default class EasyZoom {
     }
 
     const targetRect = this.target.getBoundingClientRect();
-    const relativePositionX = (pointerX - targetRect.left) / targetRect.width;
-    const relativePositionY = (pointerY - targetRect.top) / targetRect.height;
 
-    const moveX = -(
-      (this.zoomImg.width - this.flyout.offsetWidth) *
-      relativePositionX
+    // Calcula la posición relativa del puntero, limitada entre 0 y 1
+    const relativePositionX = Math.max(
+      0,
+      Math.min(1, (pointerX - targetRect.left) / targetRect.width)
     );
-    const moveY = -(
-      (this.zoomImg.height - this.flyout.offsetHeight) *
-      relativePositionY
+    const relativePositionY = Math.max(
+      0,
+      Math.min(1, (pointerY - targetRect.top) / targetRect.height)
+    );
+
+    // Calcula el desplazamiento máximo permitido
+    const maxMoveX = this.zoomImg.width - this.flyout.offsetWidth;
+    const maxMoveY = this.zoomImg.height - this.flyout.offsetHeight;
+
+    // Calcula el movimiento, asegurándose de que no exceda los límites
+    const moveX = Math.max(
+      -maxMoveX,
+      Math.min(0, -maxMoveX * relativePositionX)
+    );
+    const moveY = Math.max(
+      -maxMoveY,
+      Math.min(0, -maxMoveY * relativePositionY)
     );
 
     this.zoomImg.style.transform = `translate(${moveX}px, ${moveY}px)`;
