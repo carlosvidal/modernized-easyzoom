@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modernized EasyZoom Demo</title>
-    <link rel="stylesheet" href="./dist/modernized-easyzoom-min.css" />
+    <link rel="stylesheet" href="./src/modernized-easyzoom.css" />
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -40,6 +40,26 @@
           loading="lazy"
       /></a>
       <h1>Modernized EasyZoom Demo</h1>
+      <p>
+        Modernized EasyZoom is a lightweight, easy-to-use JavaScript library for
+        implementing image zoom functionality on web pages. This project is a
+        modernized version of the original
+        <a href="https://github.com/i-like-robots/EasyZoom">EasyZoom</a>,
+        rewritten in pure JavaScript without jQuery dependencies. It provides a
+        smooth and responsive zoom effect for product images, making it ideal
+        for e-commerce websites and online galleries.
+      </p>
+      <h3>Features</h3>
+
+      <ul>
+        <li>Responsive image zooming</li>
+        <li>Thumbnail support for multiple images</li>
+        <li>Lazy loading of zoom images for improved performance</li>
+        <li>Smooth animations and transitions</li>
+        <li>Customizable options</li>
+        <li>No jQuery dependency - pure JavaScript</li>
+      </ul>
+
       <div class="demo-section" style="width: fit-content">
         <h2>Basic Example</h2>
         <div class="easyzoom easyzoom--overlay">
@@ -279,7 +299,7 @@
     </main>
 
     <script type="module">
-      import EasyZoom from "./dist/modernized-easyzoom-min.js";
+      import EasyZoom from "./src/modernized-easyzoom.js";
 
       document.addEventListener("DOMContentLoaded", () => {
         // Initialize basic example
