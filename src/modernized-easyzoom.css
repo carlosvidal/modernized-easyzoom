@@ -89,13 +89,16 @@
 }
 
 .thumbnails .thumbnail {
-    display: block;
+    display: flex;
     position: relative;
     width: 100%;
     border: 1px solid #333;
     padding: 0 !important;
     aspect-ratio: 1 / 1;
     transition: transform 0.2s ease, border-color 0.2s ease;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
 .thumbnails .thumbnail:hover {
@@ -105,9 +108,11 @@
 
 .thumbnails .thumbnail img {
     object-fit: cover;
-    width: 100% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
     display: block;
-    transition: opacity 0.2s ease;
+    transition: opacity .2s ease;
+    height: auto;
 }
 
 .thumbnails .thumbnail:hover img {
