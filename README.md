@@ -2,6 +2,10 @@
 
 Modernized EasyZoom is a lightweight, easy-to-use JavaScript library for implementing image zoom functionality on web pages. This project is a modernized version of the original EasyZoom, rewritten in pure JavaScript without jQuery dependencies. It provides a smooth and responsive zoom effect for product images, making it ideal for e-commerce websites and online galleries.
 
+## Demo
+
+Check out the live demo: [Modernized EasyZoom Demo](https://carlosvidal.github.io/modernized-easyzoom/)
+
 ## Features
 
 - Responsive image zooming

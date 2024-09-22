@@ -1,0 +1,26 @@
+{
+  "name": "modernized-easyzoom",
+  "version": "1.0.0",
+  "description": "This project is a modernized version of the original EasyZoom, rewritten in pure JavaScript without jQuery dependencies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosvidal/modernized-easyzoom.git"
+  },
+  "keywords": [
+    "easyzoom",
+    "zoom",
+    "vanillajs",
+    "no",
+    "jquery"
+  ],
+  "author": "Carlos Vidal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosvidal/modernized-easyzoom/issues"
+  },
+  "homepage": "https://github.com/carlosvidal/modernized-easyzoom#readme"
+}
