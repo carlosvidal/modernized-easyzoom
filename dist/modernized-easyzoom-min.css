@@ -112,7 +112,8 @@
     min-height: 100% !important;
     display: block;
     transition: opacity .2s ease;
-    height: auto;
+    height: 100%;
+    width: 100%;
 }
 
 .thumbnails .thumbnail:hover img {
