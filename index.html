@@ -8,15 +8,13 @@
   </head>
   <body>
     <!-- ZOOM -->
-    <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails is-ready">
+    <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails">
       <a
         href="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_ce5c49e422176b9c77bfebb0ecb3d366130f189e_producto_large_90.jpg"
-        class=""
       >
         <img
           src="https://d20f60vzbd93dl.cloudfront.net/uploads/tienda_000634/tienda_000634_ce5c49e422176b9c77bfebb0ecb3d366130f189e_producto_medium_80.jpg"
           alt="Silla Telma"
-          class=""
           itemprop="image"
           width="624"
           height="624"
@@ -162,28 +160,24 @@
     import EasyZoom from "./dist/modernized-easyzoom-min.js";
 
     document.addEventListener("DOMContentLoaded", () => {
-      const easyZoomElement = document.querySelector(
-        ".easyzoom--with-thumbnails"
-      );
-      let easyZoom;
+      // Initialize basic example
+      new EasyZoom(document.querySelector(".easyzoom"));
 
-      if (easyZoomElement) {
-        easyZoom = new EasyZoom(easyZoomElement);
-      }
+      // Initialize example with thumbnails
+      const easyZoomWithThumbnails = new EasyZoom(
+        document.querySelector(".easyzoom--with-thumbnails")
+      );
 
       const thumbnails = document.querySelector(".thumbnails");
-      if (thumbnails && easyZoom) {
-        thumbnails.addEventListener("click", function (e) {
+      if (thumbnails) {
+        thumbnails.addEventListener("click", (e) => {
           e.preventDefault();
-
           const target = e.target.closest("a");
-          if (!target) return;
-
-          const standardSrc = target.getAttribute("data-standard");
-          const zoomSrc = target.getAttribute("href");
-
-          if (standardSrc && zoomSrc) {
-            easyZoom.swap(standardSrc, zoomSrc);
+          if (target) {
+            easyZoomWithThumbnails.swap(
+              target.getAttribute("data-standard"),
+              target.getAttribute("href")
+            );
           }
         });
       }
