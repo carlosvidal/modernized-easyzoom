@@ -56,7 +56,6 @@ html {
     border: 1px solid #fff;
     max-height: 100vmin;
     max-width: 100vmin;
-    margin-left: auto !important;
     transition: border-color 0.3s ease;
 }
 
@@ -129,4 +128,53 @@ html {
 
 .thumbnails .thumbnail:hover img {
     opacity: 0.8;
+}
+
+.product-container {
+    position: relative;
+    width: fit-content;
+}
+
+/* Media query para pantallas extra grandes */
+@media (min-width: 1200px) {
+    .product-container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        gap: 10px;
+        position: relative;
+    }
+
+    .easyzoom {
+        flex: 1;
+    }
+
+    .thumbnails {
+        max-height: 100%;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+        padding: .5%;
+        width: min-content;
+    }
+
+    .thumbnails a {
+        scroll-snap-align: start;
+    }
+
+    .thumbnails::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .thumbnails::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .thumbnails::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 3px;
+    }
+
+    .thumbnails::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 }
